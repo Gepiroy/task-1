@@ -5,6 +5,7 @@ import SecondBlock from './components/second-block/SecondBlock.vue';
 import TechnologiesBlock from './components/technologies-block/TechnologiesBlock.vue';
 import AbilitiesBlock from './components/abilities-block/AbilitiesBlock.vue';
 import SubscribesBlock from './components/subscribes-block/SubscribesBlock.vue';
+import CurrentProjectsBlock from './components/current-projects-block/CurrentProjectsBlock.vue';
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import SubscribesBlock from './components/subscribes-block/SubscribesBlock.vue';
     <technologies-block></technologies-block>
     <abilities-block></abilities-block>
     <subscribes-block></subscribes-block>
+    <current-projects-block></current-projects-block>
   </body>
 </template>
 

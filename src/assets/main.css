@@ -1,6 +1,16 @@
 :root {
   --purple: #5457F5;
 }
+
+@font-face {
+  font-family: proxima-nova;
+  src: url('./fonts/proximanova_regular.ttf');
+}
+
+body{
+  font-family: proxima-nova;
+}
+
 .justify-start{
   display: flex;
   justify-content: start;
