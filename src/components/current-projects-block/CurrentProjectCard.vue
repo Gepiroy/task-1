@@ -7,7 +7,7 @@
       <slot name="image"></slot>
       <button>Сайты</button>
     </div>
-    <h1><slot name="title"></slot></h1>
+    <h1 class="current-project-card__title"><slot name="title"></slot></h1>
   </div>
 </template>
 
@@ -15,7 +15,7 @@
   .current-project-card{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
   .current-project-body{
     position: relative;
@@ -26,6 +26,13 @@
     height: 350px;
     width: 100%;
     align-items: center;
+  }
+  .current-project-card__title{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
   }
   .current-project-body button{
     position: absolute;

@@ -6,10 +6,11 @@ import TechnologiesBlock from './components/technologies-block/TechnologiesBlock
 import AbilitiesBlock from './components/abilities-block/AbilitiesBlock.vue';
 import SubscribesBlock from './components/subscribes-block/SubscribesBlock.vue';
 import CurrentProjectsBlock from './components/current-projects-block/CurrentProjectsBlock.vue';
+import FooterBlock from './components/footer-block/FooterBlock.vue';
 </script>
 
 <template>
-  <body>
+  <main>
     <main-header></main-header>
     <hr/>
     <first-block></first-block>
@@ -18,7 +19,8 @@ import CurrentProjectsBlock from './components/current-projects-block/CurrentPro
     <abilities-block></abilities-block>
     <subscribes-block></subscribes-block>
     <current-projects-block></current-projects-block>
-  </body>
+  </main>
+  <footer-block></footer-block>
 </template>
 
 <script>
@@ -27,7 +29,10 @@ import CurrentProjectsBlock from './components/current-projects-block/CurrentPro
 
 
 <style scoped>
-body{
+main{
+  display: flex;
+  flex-direction: column;
   padding: 0px 80px;
+  gap: 8rem;
 }
 </style>
