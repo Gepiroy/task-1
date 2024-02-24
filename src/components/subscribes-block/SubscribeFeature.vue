@@ -20,5 +20,6 @@
     line-height: 19px;
     letter-spacing: 0.800000011920929px;
     text-align: left;
+    margin:0;
   }
 </style>

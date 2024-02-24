@@ -9,7 +9,7 @@ import CurrentProjectCard from "./CurrentProjectCard.vue";
       <template #title>Текущие проекты по поддержке сайтов</template>
       <template #grid-content>
         <current-project-card>
-          <template #title>Сайт Аппареля</template>
+          <template #title>Сайт Аппарель</template>
           <template #image><img src="./img/notebooks.png" alt=""/></template>
           <template #price>15 000</template>
         </current-project-card>
@@ -41,10 +41,12 @@ import CurrentProjectCard from "./CurrentProjectCard.vue";
   background: transparent;
   padding: 29px 85px;
   
+  text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
+  color: #263238;
 }
 </style>

@@ -8,49 +8,50 @@ import AbilityCard from "./AbilityCard.vue";
     <template #title>Возможности</template>
     <template #grid-content>
       <ability-card>
-        <template #number>1</template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
+        <template #number>01</template>
+        <template #title>Поддержка и развитие сайта</template>
+        <template #lore>Мы предлагаем полную поддержку вашего сайта после его запуска. Это включает в себя регулярное обновление программного обеспечения, устранение возникающихоблем, резервное копирование данных и мониторинг работы сайта. Мы также готовы внести необходимые изменения и доработки для улучшения функциональности и производительности вашего сайта.</template>
       </ability-card>
       <ability-card>
-        <template #number>2</template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
+        <template #number>02</template>
+        <template #title>Проектирование сайта</template>
+        <template #lore>Даже самая недостижимая и глобальная цель может быть успешно реализована, если её грамотно распланировать: разбить на более понятные и последовательные задачи. 
+Так же и с созданием сайта: чёткое понимание всего процесса и грамотное планирование поможет вам максимально эффективно распределить ресурсы и получить на выходе наилучший результат из возможных.</template>
       </ability-card>
       <ability-card>
-        <template #number>3</template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
+        <template #number>03</template>
+        <template #title>Дизайн сайта</template>
+        <template #lore>Разрабатываем дизайны сайтов, которые сочетают в себе современные тенденции и лучшие практики пользовательского опыта. Мы уделяем особое внимание навигации, компоновке контента, использованию цветовой схемы и типографики. Наша цель - создать дизайн, который будет привлекать внимание посетителей и обеспечивать удобство использования сайта.</template>
       </ability-card>
       <ability-card>
-        <template #number>4</template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
+        <template #number>04</template>
+        <template #title>Программирование сайта</template>
+        <template #lore>Наши опытные программисты занимаются разработкой кода для вашего сайта. Они используют передовые технологии и языки программирования, чтобы создать высококачественный и эффективный код. Это обеспечивает функциональность вашего сайта, его безопасность и быструю загрузку страниц.</template>
       </ability-card>
       <ability-card>
-        <template #number>5</template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
+        <template #number>05</template>
+        <template #title>HTML - верстка сайта</template>
+        <template #lore>Осуществляем профессиональную верстку вашего сайта с использованием HTML и CSS. Это позволяет правильно отображать контент на различных устройствах и браузерах, обеспечивая адаптивный дизайн и отзывчивость сайта.</template>
       </ability-card>
       <ability-card>
-        <template #number>6</template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
+        <template #number>06</template>
+        <template #title>Тестирование сайта</template>
+        <template #lore>Проводим тщательное тестирование вашего сайта, чтобы убедиться в его работоспособности, корректности отображения и отсутствии ошибок. Мы проверяем функциональность всех элементов сайта, его совместимость с различными платформами и браузерами, а также производительность загрузки страниц.</template>
       </ability-card>
       <ability-card>
-        <template #number>7</template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
+        <template #number>07</template>
+        <template #title>Настройка рекламы</template>
+        <template #lore>Помогаем вам настроить эффективную рекламу для вашего сайта. Это может включать настройку контекстной рекламы, рекламных кампаний в социальных сетях или поисковую оптимизацию (SEO). Наша цель - привлечь больше посетителей на ваш сайт и увеличить конверсию.</template>
       </ability-card>
       <ability-card>
-        <template #number>8</template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
+        <template #number>08</template>
+        <template #title>Фирменный стиль</template>
+        <template #lore>Фирменный стиль - это комплекс элементов дизайна, которые определяют внешний облик и имидж компании. Он включает в себя логотип, цветовую палитру, типографику, графические элементы и прочие визуальные атрибуты. Фирменный стиль помогает создать единое и узнаваемое представление о бренде, повышает его узнаваемость и доверие потребителей.</template>
       </ability-card>
       <ability-card>
-        <template #number>9</template>
-        <template #title>later</template>
-        <template #lore>Вообще по-хорошему для DRY инфу парсить с бэка и через v-for клепать, хотя какой бек для статичного блока сайта-визитки...</template>
+        <template #number>09</template>
+        <template #title>Разработка логотипа</template>
+        <template #lore>Логотип - это графическое изображение или символ, которое служит визуальным отображением компании или бренда. Разработка логотипа включает в себя процесс создания уникального и запоминающегося знака, который будет отражать ценности и характер компании. Хорошо разработанный логотип способен привлечь внимание, установить эмоциональную связь с аудиторией и выделить бренд фоне конкурентов.</template>
       </ability-card>
     </template>
   </triple-block>

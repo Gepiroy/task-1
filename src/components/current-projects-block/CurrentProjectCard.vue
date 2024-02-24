@@ -40,6 +40,11 @@
     justify-self: end;
     bottom: 1.5rem;
     left: 1.5rem;
+    border: 0;
+    background: #e6e6e6;
+    border-radius: 4px;
+    padding: 5px 23px;
+    color: #676F73;
   }
   .current-project-body :slotted(img){
     max-height: 100%;

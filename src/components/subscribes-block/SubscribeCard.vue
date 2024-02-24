@@ -8,14 +8,16 @@ import ExtraIcon from './icons/ExtraIcon.vue'
 <template>
   <div class="subscribe-card">
     <div class="subscribe-card-content">
-      <h1><slot name="title"></slot></h1>
-      <p><slot name="lore"></slot></p>
-      <subscribe-feature v-for="(text, index) in subscriptionTexts" :key="index">
-        <template v-if="index<activeFeatures" #icon><feature-enabled-icon></feature-enabled-icon></template>
-        <template v-else #icon><feature-disabled-icon></feature-disabled-icon></template>
-        <template v-if="index<activeFeatures" #text>{{ text }}</template>
-        <template v-else #text><span class="gray-span">{{text }}</span></template>
-      </subscribe-feature>
+      <h1 class="subscribe-card__title"><slot name="title"></slot></h1>
+      <p class="subscribe-card__lore"><slot name="lore"></slot></p>
+      <div class="subscribe-card__features">
+        <subscribe-feature v-for="(text, index) in subscriptionTexts" :key="index">
+          <template v-if="index<activeFeatures" #icon><feature-enabled-icon></feature-enabled-icon></template>
+          <template v-else #icon><feature-disabled-icon></feature-disabled-icon></template>
+          <template v-if="index<activeFeatures" #text>{{ text }}</template>
+          <template v-else #text><span class="gray-span">{{text }}</span></template>
+        </subscribe-feature>
+      </div>
       <hr v-if="extraFeatures !== undefined && extraFeatures.length != 0"/>
       <subscribe-feature v-for="(text, index) in extraFeatures" :key="index">
         <template #icon><extra-icon></extra-icon></template>
@@ -24,7 +26,7 @@ import ExtraIcon from './icons/ExtraIcon.vue'
     </div>
     <div class="price-block">
       <hr/>
-      <h1><slot name="price"></slot></h1>
+      <h1 class="subscribe-card__price"><slot name="price"></slot></h1>
     </div>
   </div>
 </template>
@@ -65,6 +67,33 @@ export default{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .subscribe-card__features{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .subscribe-card__title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0.800000011920929px;
+    text-align: left;
+    color: #263238;
+  }
+  .subscribe-card__lore{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.800000011920929px;
+    text-align: left;
+  }
+  .subscribe-card__price{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.800000011920929px;
+    text-align: left;
   }
   .subscribe-card-content{
 

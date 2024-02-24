@@ -1,32 +1,42 @@
 <script setup>
-import LeftMenuItem from "./LeftMenuItem.vue";
 import IconLogo from "../icons/IconLogo.vue";
 </script>
 
 <template>
-  <div class="menu">
-    <left-menu-item>
-      <template #item><icon-logo></icon-logo></template>
-    </left-menu-item>
-    <left-menu-item>
-      <template #item>ПОРТФОЛИО</template>
-    </left-menu-item>
-    <left-menu-item>
-      <template #item>О КОМПАНИИ</template>
-    </left-menu-item>
-    <left-menu-item>
-      <template #item>УСЛУГИ</template>
-    </left-menu-item>
-    <left-menu-item>
-      <template #item>КОНТАКТЫ</template>
-    </left-menu-item>
+  <div class="left-menu">
+    <a class="left-menu__item" href="some-href">
+      <icon-logo></icon-logo>
+    </a>
+    <a class="left-menu__item" href="some-href">
+      ПОРТФОЛИО
+    </a>
+    <a class="left-menu__item" href="some-href">
+      О КОМПАНИИ
+    </a>
+    <a class="left-menu__item" href="some-href">
+      УСЛУГИ
+    </a>
+    <a class="left-menu__item" href="some-href">
+      КОНТАКТЫ
+    </a>
   </div>
 </template>
 
 <style scoped>
-  .menu{
+  .left-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
   }
+  .left-menu__item{
+    color: #676F73;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.8399999737739563px;
+    text-align: left;
+    text-decoration: none;
+  }
+  
 </style>

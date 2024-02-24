@@ -13,16 +13,22 @@ import Arrow from './svg/Arrow.vue';
 <style scoped>
 .leave-an-order-block{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   align-items: center;
+  padding: 0 136px;
   
   background: var(--purple);
 }
+.leave-an-order-block__arrow{
+  justify-self: end;
+}
 .leave-an-order-block__text{
+  text-transform: uppercase;
   font-size: 64px;
   font-weight: 600;
   line-height: 67px;
   letter-spacing: 0em;
   text-align: left;
+  color: white;
 }
 </style>

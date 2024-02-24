@@ -5,12 +5,8 @@ import SupportingSites from './SupportingSites.vue';
 
 <template>
   <div class="first-block">
-    <div class="first-grid-div">
-      <supporting-sites></supporting-sites>
-    </div>
-    <div class="second-grid-div">
-      <group-of-things></group-of-things>
-    </div>
+    <supporting-sites></supporting-sites>
+    <group-of-things></group-of-things>
   </div>
 </template>
 

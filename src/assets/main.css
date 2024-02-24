@@ -1,5 +1,7 @@
 :root {
   --purple: #5457F5;
+  --black: #263238;
+  --shadow: #676F73;
 }
 
 @font-face {
@@ -9,6 +11,9 @@
 
 body{
   font-family: proxima-nova;
+}
+p, h1, h3{
+  color: var(--black);
 }
 
 .justify-start{
