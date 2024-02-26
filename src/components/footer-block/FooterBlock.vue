@@ -6,55 +6,60 @@ import InstagramIcon from './icons/InstagramIcon.vue'
 </script>
 
 <template>
-  <leave-an-order-block></leave-an-order-block> <!-- В реальном макете тут бы ещё параметр ссылки и текста передавался. -->
-  <div class="footer-content">
-    <div class="footer-grid">
-      <icon-logo style="width: 202px; height: 80px;"></icon-logo>
-      <div class="footer-column">
-        <h3>РАЗДЕЛЫ</h3>
-        <a>Главная</a>
-        <a>Портфолио</a>
-        <a>О компании</a>
-        <a>Цены</a>
-        <a>Контакты</a>
-        <a>Услуги</a>
+  <div class="footer-block">
+    <leave-an-order-block></leave-an-order-block> <!-- В реальном макете тут бы ещё параметр ссылки и текста передавался. -->
+    <div class="footer-content">
+      <div class="footer-grid">
+        <icon-logo style="width: 202px; height: 80px;"></icon-logo>
+        <div class="footer-column">
+          <h3>РАЗДЕЛЫ</h3>
+          <a>Главная</a>
+          <a>Портфолио</a>
+          <a>О компании</a>
+          <a>Цены</a>
+          <a>Контакты</a>
+          <a>Услуги</a>
+        </div>
+        <div class="footer-column">
+          <h3>УСЛУГИ</h3>
+          <a>Корпоративные сайты</a>
+          <a>Интернет-магазины</a>
+          <a>Продающие лендинги</a>
+          <a>Сложные веб-сервисы</a>
+          <a>Программное обеспечение</a>
+          <a>Онлайн продвижение</a>
+          <a>Мобильная разработка</a>
+        </div>
+        <div class="footer-column">
+          <h3>ИНФОРМАЦИЯ</h3>
+          <a>Частозадаваемые вопросы</a>
+          <a>Политика конфиденциальности</a>
+          <a>Вакансии</a>
+          <a>Партнерам</a>
+          <a>Акции</a>
+        </div>
       </div>
-      <div class="footer-column">
-        <h3>УСЛУГИ</h3>
-        <a>Корпоративные сайты</a>
-        <a>Интернет-магазины</a>
-        <a>Продающие лендинги</a>
-        <a>Сложные веб-сервисы</a>
-        <a>Программное обеспечение</a>
-        <a>Онлайн продвижение</a>
-        <a>Мобильная разработка</a>
-      </div>
-      <div class="footer-column">
-        <h3>ИНФОРМАЦИЯ</h3>
-        <a>Частозадаваемые вопросы</a>
-        <a>Политика конфиденциальности</a>
-        <a>Вакансии</a>
-        <a>Партнерам</a>
-        <a>Акции</a>
-      </div>
-    </div>
-    <hr/>
-    <div class="footer-last">
-      <div class="footer-last-left">
-        <a>ООО «Твой стартап»</a>
-        <a>© 2020 — 2022</a>
-        <a style="color: #A8ADAF;">8 800 350 93 98</a>
-        <a style="color: #A8ADAF;">info@your-startup.space</a>
-      </div>
-      <div class="footer-last-right">
-        <a><vk-icon></vk-icon></a>
-        <a><instagram-icon></instagram-icon></a>
+      <hr/>
+      <div class="footer-last">
+        <div class="footer-last-left">
+          <a>ООО «Твой стартап»</a>
+          <a>© 2020 — 2022</a>
+          <a style="color: #A8ADAF;">8 800 350 93 98</a>
+          <a style="color: #A8ADAF;">info@your-startup.space</a>
+        </div>
+        <div class="footer-last-right">
+          <a><vk-icon></vk-icon></a>
+          <a><instagram-icon></instagram-icon></a>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style>
+.footer-block{
+  padding: 80px 0 0 0;
+}
 .footer-content{
   padding: 0 80px;
 }
