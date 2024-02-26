@@ -1,8 +1,8 @@
 <script setup>
 import LeaveAnOrderBlock from '@c/leave-an-order-block/LeaveAnOrderBlock.vue';
-import IconLogo from "@c/icons/IconLogo.vue";
-import VkIcon from './icons/VkIcon.vue'
-import InstagramIcon from './icons/InstagramIcon.vue'
+import IconLogo from "@img/IconLogo.vue";
+import VkIcon from '@img/VkIcon.vue'
+import InstagramIcon from '@img/InstagramIcon.vue'
 </script>
 
 <template>

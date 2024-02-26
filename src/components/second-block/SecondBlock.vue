@@ -1,6 +1,6 @@
 <script setup>
 import SecondBlockCard from './SecondBlockCard.vue';
-import FirstIcon from './icons/FirstIcon.vue';
+import FirstIcon from '@img/FirstIcon.vue';
 import TripleBlock from "@c/TripleBlock.vue";
 </script>
 

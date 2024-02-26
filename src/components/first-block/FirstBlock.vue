@@ -1,5 +1,5 @@
 <script setup>
-import GroupOfThings from '../icons/GroupOfThings.vue';
+import GroupOfThings from '@img/GroupOfThings.vue';
 import SupportingSites from './SupportingSites.vue';
 </script>
 

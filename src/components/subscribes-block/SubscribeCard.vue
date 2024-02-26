@@ -1,8 +1,8 @@
 <script setup>
 import SubscribeFeature from './SubscribeFeature.vue'
-import FeatureEnabledIcon from './icons/FeatureEnabledIcon.vue'
-import FeatureDisabledIcon from './icons/FeatureDisabledIcon.vue'
-import ExtraIcon from './icons/ExtraIcon.vue'
+import FeatureEnabledIcon from '@img/FeatureEnabledIcon.vue'
+import FeatureDisabledIcon from '@img/FeatureDisabledIcon.vue'
+import ExtraIcon from '@img/ExtraIcon.vue'
 </script>
 
 <template>

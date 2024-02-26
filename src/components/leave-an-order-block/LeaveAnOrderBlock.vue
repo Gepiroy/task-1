@@ -1,5 +1,5 @@
 <script setup>
-import Arrow from './svg/Arrow.vue';
+import Arrow from '@img/Arrow.vue';
 </script>
 
 <template>

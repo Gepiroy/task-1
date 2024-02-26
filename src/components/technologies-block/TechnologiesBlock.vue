@@ -1,61 +1,15 @@
 <script setup>
 import TripleBlock from "@c/TripleBlock.vue";
 import TechnologyCard from "./TechnologyCard.vue";
-import CssIcon from "./icons/CssIcon.vue";
 </script>
 
 <template>
   <triple-block>
     <template #title>Технологии</template>
-      <technology-card>
-        <template #icon><css-icon></css-icon></template>
-        <template #title>CSS</template>
-        <template #lore>Язык программирования</template>
-      </technology-card>
-      <technology-card>
-        <template #icon><css-icon></css-icon></template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
-      </technology-card>
-      <technology-card>
-        <template #icon><css-icon></css-icon></template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
-      </technology-card>
-      <technology-card>
-        <template #icon><css-icon></css-icon></template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
-      </technology-card>
-      <technology-card>
-        <template #icon><css-icon></css-icon></template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
-      </technology-card>
-      <technology-card>
-        <template #icon><css-icon></css-icon></template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
-      </technology-card>
-      <technology-card>
-        <template #icon><css-icon></css-icon></template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
-      </technology-card>
-      <technology-card>
-        <template #icon><css-icon></css-icon></template>
-        <template #title>later</template>
-        <template #lore>I'll write it all later...</template>
-      </technology-card>
-      <technology-card>
-        <template #icon><css-icon></css-icon></template>
-        <template #title>later</template>
-        <template #lore>...</template>
-      </technology-card>
-      <technology-card>
-        <template #icon><css-icon></css-icon></template>
-        <template #title>later</template>
-        <template #lore>...</template>
+      <technology-card v-for="(card, index) in cards" :key="index">
+        <template #icon><img :src="card.icon"/></template>
+        <template #title>{{ card.title }}</template>
+        <template #lore>{{ card.lore }}</template>
       </technology-card>
   </triple-block>
 </template>
@@ -63,3 +17,14 @@ import CssIcon from "./icons/CssIcon.vue";
 <style>
 
 </style>
+
+<script>
+  import cards from './technologies.js'
+  export default {
+    data: function(){
+      return {
+        cards: cards
+      }
+    }
+  }
+</script>

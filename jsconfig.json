@@ -2,7 +2,8 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "@c/*": ["./src/components/*"]
+      "@c/*": ["./src/components/*"],
+      "@img/*": ["./src/assets/img*"]
     }
   },
   "exclude": ["node_modules", "dist"]
