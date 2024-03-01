@@ -1,31 +1,17 @@
 <script setup>
 import SecondBlockCard from './SecondBlockCard.vue';
-import FirstIcon from '@img/FirstIcon.vue';
 import TripleBlock from "@c/TripleBlock.vue";
+import axios from 'axios';
+//import { ref } from 'vue';
+//const cards = ref(null);
 </script>
 
 <template>
   <triple-block>
-    <SecondBlockCard>
-      <template #icon><first-icon/></template>
-      <template #title>КОНКУРЕНТОСПОСОБНОСТЬ</template>
-      <template #lore>Мы понимаем, что Ваше время
-и бюджет являются важными факторами при выборе веб-студии, благодаря нашим конкурентоспособным ценам Вам не придется выходить за рамки бюджета, чтобы получить высококачественный сервис.</template>
-    </SecondBlockCard>
-    <SecondBlockCard>
-      <template #icon><first-icon/></template>
-      <template #title>КАЧЕСТВО</template>
-      <template #lore>Наша команда состоит из профессионалов, которые имеют большой опыт в разработке сайтов. Мы используем только современные технологии
-и инструменты, чтобы создать сайт, который будет не только красивым и удобным для пользователей,
-но и эффективным для вашего бизнеса.</template>
-    </SecondBlockCard>
-    <SecondBlockCard>
-      <template #icon><first-icon/></template>
-      <template #title>КЛИЕНТООРИЕНТИРОВАННОСТЬ</template>
-      <template #lore>Мы предлагаем полный цикл разработки сайта, начиная
-от анализа вашего бизнеса
-и конкурентов, до создания дизайна, написания контента
-и программирования. Мы гарантируем высокое качество работы и соблюдение сроков.</template>
+    <SecondBlockCard v-for="(card, index) in cards" :key="index">
+      <template #icon><img :src="card.icon"></template>
+      <template #title>{{ card.title }}</template>
+      <template #lore>{{ card.lore }}</template>
     </SecondBlockCard>
   </triple-block>
 </template>
@@ -36,3 +22,20 @@ import TripleBlock from "@c/TripleBlock.vue";
     grid-template-columns: 1fr 1fr 1fr;
   }
 </style>
+
+<script>
+export default{
+  data () {
+    return {
+      cards: null
+    };
+  },
+  mounted () {
+    axios
+    .get("http://localhost/task-2/wp-json/task-2/v1/benefit")
+    .then((res) => {
+      this.cards = res.data
+    })
+  }
+}
+</script>

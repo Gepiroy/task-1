@@ -1,13 +1,14 @@
 <script setup>
 import TripleBlock from "@c/TripleBlock.vue";
 import TechnologyCard from "./TechnologyCard.vue";
+import axios from 'axios';
 </script>
 
 <template>
   <triple-block>
     <template #title>Технологии</template>
       <technology-card v-for="(card, index) in cards" :key="index">
-        <template #icon><img :src="card.icon"/></template>
+        <template #icon><img :src="card.icon" :alt="card.title"/></template>
         <template #title>{{ card.title }}</template>
         <template #lore>{{ card.lore }}</template>
       </technology-card>
@@ -19,12 +20,18 @@ import TechnologyCard from "./TechnologyCard.vue";
 </style>
 
 <script>
-  import cards from './technologies.js'
   export default {
-    data: function(){
+    data() {
       return {
-        cards: cards
+        cards: null
       }
+    },
+    mounted() {
+      axios
+      .get("http://localhost/task-2/wp-json/task-2/v1/technologies")
+      .then((res) => {
+        this.cards = res.data
+      })
     }
   }
 </script>

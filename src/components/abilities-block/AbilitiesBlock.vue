@@ -1,6 +1,7 @@
 <script setup>
 import TripleBlock from "../TripleBlock.vue";
 import AbilityCard from "./AbilityCard.vue";
+import axios from "axios";
 </script>
 
 <template>
@@ -21,12 +22,18 @@ import AbilityCard from "./AbilityCard.vue";
 </style>
 
 <script>
-  import cards from './cards.js'
   export default {
-    data: function(){
+    data() {
       return {
-        cards: cards
+        cards: null
       }
+    },
+    mounted() {
+      axios
+      .get("http://localhost/task-2/wp-json/task-2/v1/abilities")
+      .then((res) => {
+        this.cards = res.data
+      })
     }
   }
 </script>

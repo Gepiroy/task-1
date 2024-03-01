@@ -13,6 +13,7 @@
     height: 100%;
   }
   .second-block__card h3{
+    text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
