@@ -18,7 +18,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 19px;
-    letter-spacing: 0.800000011920929px;
+    letter-spacing: 1px;
     text-align: left;
     margin:0;
   }

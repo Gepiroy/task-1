@@ -77,7 +77,7 @@ export default{
     font-size: 40px;
     font-weight: 600;
     line-height: 43px;
-    letter-spacing: 0.800000011920929px;
+    letter-spacing: 1px;
     text-align: left;
     color: #263238;
   }
@@ -85,14 +85,14 @@ export default{
     font-size: 22px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.800000011920929px;
+    letter-spacing: 1px;
     text-align: left;
   }
   .subscribe-card__price{
     font-size: 50px;
     font-weight: 600;
     line-height: 54px;
-    letter-spacing: 0.800000011920929px;
+    letter-spacing: 1px;
     text-align: left;
   }
   .subscribe-card-content{

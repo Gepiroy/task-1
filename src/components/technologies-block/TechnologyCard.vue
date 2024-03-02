@@ -24,7 +24,7 @@
   font-size: 30px;
   font-weight: 600;
   line-height: 32px;
-  letter-spacing: 0.800000011920929px;
+  letter-spacing: 1px;
   text-align: left;
   color: #263238;
   margin: 0;
@@ -34,7 +34,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 17px;
-  letter-spacing: 0.800000011920929px;
+  letter-spacing: 1px;
   text-align: left;
   margin: 0;
 
