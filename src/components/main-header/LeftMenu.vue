@@ -7,16 +7,16 @@ import IconLogo from "@img/IconLogo.vue";
     <a class="left-menu__item" href="some-href">
       <icon-logo></icon-logo>
     </a>
-    <a class="left-menu__item" href="some-href">
+    <a class="left-menu__item desktop" href="some-href">
       ПОРТФОЛИО
     </a>
-    <a class="left-menu__item" href="some-href">
+    <a class="left-menu__item desktop" href="some-href">
       О КОМПАНИИ
     </a>
-    <a class="left-menu__item" href="some-href">
+    <a class="left-menu__item desktop" href="some-href">
       УСЛУГИ
     </a>
-    <a class="left-menu__item" href="some-href">
+    <a class="left-menu__item desktop" href="some-href">
       КОНТАКТЫ
     </a>
   </div>
@@ -38,5 +38,9 @@ import IconLogo from "@img/IconLogo.vue";
     text-align: left;
     text-decoration: none;
   }
-  
+  @media(max-width:1024px){
+    nav{
+      display: none;
+    }
+  }
 </style>

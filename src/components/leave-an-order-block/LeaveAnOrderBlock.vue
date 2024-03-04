@@ -13,7 +13,7 @@ import Arrow from '@img/Arrow.vue';
 <style scoped>
 .leave-an-order-block{
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 75% 25%;
   align-items: center;
   padding: 0 136px;
   

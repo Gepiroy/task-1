@@ -5,8 +5,7 @@ import axios from 'axios';
 </script>
 
 <template>
-  <triple-block>
-    <template #title>Технологии</template>
+  <triple-block title="Технологии">
       <technology-card v-for="(card, index) in cards" :key="index">
         <template #icon><img :src="card.icon" :alt="card.title"/></template>
         <template #title>{{ card.title }}</template>

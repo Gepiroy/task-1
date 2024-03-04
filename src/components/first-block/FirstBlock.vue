@@ -6,7 +6,7 @@ import SupportingSites from './SupportingSites.vue';
 <template>
   <div class="first-block">
     <supporting-sites></supporting-sites>
-    <group-of-things></group-of-things>
+    <div class="first-block__image"><group-of-things></group-of-things></div>
   </div>
 </template>
 
@@ -14,5 +14,11 @@ import SupportingSites from './SupportingSites.vue';
   .first-block{
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+
+  @media(max-width:1024px){
+    .first-block__image{
+      display: none;
+    }
   }
 </style>

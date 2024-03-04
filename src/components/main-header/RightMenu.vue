@@ -3,14 +3,17 @@ import RightMenuButton from "@c/DiscussProjectButton.vue";
 </script>
 
 <template>
-  <div class="menu">
+  <div class="right-menu desktop">
     <p class="menu__phone-number"><span style="color: var(--purple)">8 (800)</span> 350 93 98</p>
     <right-menu-button></right-menu-button>
+  </div>
+  <div class="right-menu mobile">
+    <img src="@img/MobileMenu.svg">
   </div>
 </template>
 
 <style scoped>
-  .menu{
+  .right-menu{
     display: flex;
     justify-content: right;
     padding: 14px;

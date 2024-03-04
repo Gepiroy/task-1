@@ -20,7 +20,7 @@ import RightMenu from './RightMenu.vue';
 
 <style scoped>
   .main-header{
-    padding: 0 80px;
+    padding: 0 var(--page-padding);
   }
   .main-header-content{
     display: grid;

@@ -5,7 +5,7 @@ import DiscussProjectButton from "../DiscussProjectButton.vue";
 <template>
   <div class="supporting-sites">
     <h1>ПОДДЕРЖКА САЙТОВ</h1>
-    <h3>Решаем все технические вопросы, чтобы вы могли сосредоточиться <span>на своём бизнесе.</span></h3>
+    <h3>Решаем все технические вопросы, чтобы вы могли сосредоточиться <span style="color: var(--purple)">на своём бизнесе.</span></h3>
     <discuss-project-button></discuss-project-button>
   </div>
 </template>
@@ -33,9 +33,5 @@ import DiscussProjectButton from "../DiscussProjectButton.vue";
     letter-spacing: 0em;
     text-align: left;
     color: #676F73;
-  }
-  .supporting-sites span{
-    font-weight: 600;
-    color: var(--purple);
   }
 </style>

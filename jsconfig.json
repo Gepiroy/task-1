@@ -3,7 +3,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@c/*": ["./src/components/*"],
-      "@img/*": ["./src/assets/img*"]
+      "@img/*": ["./src/assets/img/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

@@ -5,8 +5,7 @@ import CurrentProjectCard from "./CurrentProjectCard.vue";
 
 <template>
   <div class = "current-projects-block">
-    <triple-block>
-      <template #title>Текущие проекты по поддержке сайтов</template>
+    <triple-block title="Текущие проекты по поддержке сайтов">
       <template #grid-content>
         <current-project-card>
           <template #title>Сайт Аппарель</template>

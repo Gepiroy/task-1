@@ -3,12 +3,12 @@
 
 <template>
   <div class="triple-block">
-    <div v-if="this.$slots.title||this.$slots.comment" class="triple-block-heading">
+    <div v-if="title||comment" class="triple-block-heading">
       <div class="justify-left">
-        <h1 class="triple-block__title"><slot name="title"></slot></h1>
+        <h1 v-if="title" class="triple-block__title">{{ title }}</h1>
       </div>
       <div class="justify-right">
-        <p class="triple-block__comment"><slot name="comment"></slot></p>
+        <p v-if="comment" class="triple-block__comment">{{ comment }}</p>
       </div>
     </div>
     <div class="triple-body">
@@ -19,10 +19,17 @@
 </template>
 
 <style scoped>
-.triple-block-heading{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.triple-body{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
 }
+.triple-block-heading{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .triple-block__title{
   text-transform: uppercase;
   font-size: 40px;
@@ -40,4 +47,22 @@
     text-align: left;
     color: #676F73;
 }
+@media(min-width: 1024px){
+  .triple-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row dense;
+    column-gap: 25px;
+  }
+  .triple-block-heading{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 </style>
+
+<script>
+  export default{
+    props: ['title','comment']
+  }
+</script>

@@ -64,9 +64,17 @@ import InstagramIcon from '@img/InstagramIcon.vue'
   padding: 0 80px;
 }
 .footer-grid{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 80px 0;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+@media(min-width: 1024px){
+  .footer-grid{
+    display: grid;
+    padding: 80px 0;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
 }
 .footer-column{
   display: flex;

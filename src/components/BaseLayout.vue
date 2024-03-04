@@ -21,7 +21,15 @@ import FooterBlock from '@c/footer-block/FooterBlock.vue';
 main{
   display: flex;
   flex-direction: column;
-  padding: 0px 80px;
+  padding: 0px 30px;
   gap: 8rem;
+}
+@media(min-width:1024px){
+  main{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 80px;
+    gap: 8rem;
+  }
 }
 </style>

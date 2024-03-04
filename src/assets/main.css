@@ -2,6 +2,13 @@
   --purple: #5457F5;
   --black: #263238;
   --shadow: #676F73;
+
+  --page-padding: 80px;
+}
+@media(max-width: 1024px){
+  :root{
+    --page-padding: 30px;
+  }
 }
 
 @font-face {
@@ -24,12 +31,17 @@ p, h1, h3{
   display: flex;
   justify-content: end;
 }
-.triple-body{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-flow: row dense;
-  column-gap: 25px;
-}
 .purple-span{
   color: var(--purple);
+}
+
+@media(max-width: 1023px){
+  .desktop{
+    display: none!important;
+  }
+}
+@media(min-width: 1024px){
+  .mobile{
+    display: none!important;
+  }
 }

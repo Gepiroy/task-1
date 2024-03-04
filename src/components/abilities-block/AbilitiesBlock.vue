@@ -5,8 +5,7 @@ import axios from "axios";
 </script>
 
 <template>
-  <triple-block>
-    <template #title>Возможности</template>
+  <triple-block title='Возможности'>
     <template #grid-content>
       <ability-card v-for="(data, index) in cards" :key="index">
         <template #number>{{ (index+1).toString().padStart(2, '0') }}</template>
