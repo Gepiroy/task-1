@@ -1,5 +1,5 @@
 <template>
-  <div class="ability-card">
+  <div class="ability-card card">
     <div class="ability-title">
       <h1 class="ability-number"><slot name="number"></slot></h1>
     </div>

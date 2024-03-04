@@ -1,5 +1,5 @@
 <template>
-  <div class="second-block__card">
+  <div class="second-block__card card">
     <slot name="icon"></slot>
     <h3><slot name="title"></slot></h3>
     <p><slot name="lore"></slot></p>
@@ -13,6 +13,7 @@
     height: 100%;
   }
   .second-block__card h3{
+    overflow-wrap: break-word;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;

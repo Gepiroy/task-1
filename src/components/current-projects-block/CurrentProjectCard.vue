@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="current-project-card">
+  <div class="current-project-card card">
     <div class="current-project-body">
       <slot name="image"></slot>
       <button>Сайты</button>

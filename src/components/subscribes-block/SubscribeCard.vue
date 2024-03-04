@@ -6,7 +6,7 @@ import ExtraIcon from '@img/ExtraIcon.vue'
 </script>
 
 <template>
-  <div class="subscribe-card">
+  <div class="subscribe-card card">
     <div class="subscribe-card-content">
       <h1 class="subscribe-card__title"><slot name="title"></slot></h1>
       <p class="subscribe-card__lore"><slot name="lore"></slot></p>
@@ -61,6 +61,7 @@ export default{
 
 <style scoped>
   .subscribe-card{
+    box-sizing: border-box;
     border-radius: 4px;
     border: 1px solid black;
     padding: 50px;

@@ -1,5 +1,5 @@
 <template>
-  <div class="technology-card">
+  <div class="technology-card card">
     <slot name="icon"></slot>
     <div class="technology-card-texts">
       <h3 class="technology-card__title"><slot name="title"></slot></h3>
