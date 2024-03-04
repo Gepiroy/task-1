@@ -17,7 +17,7 @@ import RightMenuButton from "@c/DiscussProjectButton.vue";
     display: flex;
     justify-content: right;
     padding: 14px;
-    gap: 4rem;
+    gap: 40px;
   }
   .menu__phone-number{
     font-size: 20px;

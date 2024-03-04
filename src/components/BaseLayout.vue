@@ -4,32 +4,21 @@ import FooterBlock from '@c/footer-block/FooterBlock.vue';
 </script>
 
 <template>
-  <div class="container">
-    <header>
-      <slot name="header"><main-header></main-header></slot>
-    </header>
-    <main>
-      <slot></slot>
-    </main>
-    <footer>
-      <slot name="footer"><footer-block></footer-block></slot>
-    </footer>
-  </div>
+  <header>
+    <slot name="header"><main-header></main-header></slot>
+  </header>
+  <main>
+    <slot></slot>
+  </main>
+  <footer>
+    <slot name="footer"><footer-block></footer-block></slot>
+  </footer>
 </template>
 
 <style scoped>
 main{
   display: flex;
   flex-direction: column;
-  padding: 0px 30px;
-  gap: 8rem;
-}
-@media(min-width:1024px){
-  main{
-    display: flex;
-    flex-direction: column;
-    padding: 0px 80px;
-    gap: 8rem;
-  }
+  gap: 180px;
 }
 </style>

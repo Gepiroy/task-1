@@ -38,8 +38,8 @@
     position: absolute;
     align-self: flex-start;
     justify-self: end;
-    bottom: 1.5rem;
-    left: 1.5rem;
+    bottom: 18px;
+    left: 18px;
     border: 0;
     background: #e6e6e6;
     border-radius: 4px;

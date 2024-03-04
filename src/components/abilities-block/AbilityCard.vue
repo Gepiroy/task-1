@@ -14,7 +14,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     color: #263238;
   }
@@ -30,7 +30,6 @@
   .ability-title{
     position: relative;
     display: flex;
-    gap: 2rem;
   }
   .ability-title hr{
     display: flex;
@@ -44,8 +43,8 @@
     content:" ";
     display: block;
     height: 2px;
-    margin-left: 4rem;
-    width: calc(100% - 4rem);
+    margin-left: 2em;
+    width: calc(100% - 2em);
     position: absolute;
     top: 50%;
     left: 0;

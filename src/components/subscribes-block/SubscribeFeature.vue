@@ -7,11 +7,9 @@
 
 <style>
   .subscribe-feature{
-    /*display: flex;
-    flex-direction: row;*/
     align-items: center;
     display: grid;
-    grid-template-columns: 1.5rem 1fr;
+    grid-template-columns: 24px 1fr;
     gap: 30px;
   }
   .subscribe-feature__text{

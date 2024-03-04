@@ -5,23 +5,18 @@ import RightMenu from './RightMenu.vue';
 </script>
 
 <template>
-  <div class="main-header">
-    <div class="main-header-content">
-      <div class="first-grid-div">
+  <div class="global-container">
+    <div class="main-header">
+      <div class="main-header-content">
         <left-menu></left-menu>
-      </div>
-      <div class="second-grid-div">
         <right-menu></right-menu>
       </div>
+      <hr />
     </div>
-    <hr />
   </div>
 </template>
 
 <style scoped>
-  .main-header{
-    padding: 0 var(--page-padding);
-  }
   .main-header-content{
     display: grid;
     grid-template-columns: 50% 50%;

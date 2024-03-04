@@ -2,20 +2,22 @@
 </script>
 
 <template>
-  <section class="triple-block">
-    <div v-if="title||comment" class="triple-block-heading">
-      <div class="justify-left">
-        <h1 v-if="title" class="triple-block__title">{{ title }}</h1>
+  <div class="global-container">
+    <section class="triple-block">
+      <div v-if="title||comment" class="triple-block-heading">
+        <div class="justify-left">
+          <h1 v-if="title" class="triple-block__title">{{ title }}</h1>
+        </div>
+        <div class="justify-right">
+          <p v-if="comment" class="triple-block__comment">{{ comment }}</p>
+        </div>
       </div>
-      <div class="justify-right">
-        <p v-if="comment" class="triple-block__comment">{{ comment }}</p>
+      <div class="triple-body">
+        <slot name="grid-content"></slot> <!-- legacy temporary support -->
+        <slot></slot>
       </div>
-    </div>
-    <div class="triple-body">
-      <slot name="grid-content"></slot> <!-- legacy temporary support -->
-      <slot></slot>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <style scoped>

@@ -4,9 +4,11 @@ import SupportingSites from './SupportingSites.vue';
 </script>
 
 <template>
-  <div class="first-block">
-    <supporting-sites></supporting-sites>
-    <div class="first-block__image"><group-of-things></group-of-things></div>
+  <div class="global-container">
+    <section class="first-block">
+      <supporting-sites></supporting-sites>
+      <div class="first-block__image"><group-of-things></group-of-things></div>
+    </section>
   </div>
 </template>
 

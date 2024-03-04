@@ -11,9 +11,8 @@
 <style scoped>
 .technology-card{
   display: flex;
-  gap: 4rem;
+  gap: 68px;
   align-items: center;
-  padding: 2rem;
 }
 .technology-card-texts{
   display: flex;
