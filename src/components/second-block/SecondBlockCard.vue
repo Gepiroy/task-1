@@ -1,9 +1,9 @@
 <template>
-  <div class="second-block__card card">
+  <article class="second-block__card card">
     <slot name="icon"></slot>
     <h3><slot name="title"></slot></h3>
     <p><slot name="lore"></slot></p>
-  </div>
+  </article>
 </template>
 
 <style scoped>

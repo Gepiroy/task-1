@@ -2,13 +2,13 @@
 </script>
 
 <template>
-  <div class="current-project-card card">
+  <article class="current-project-card card">
     <div class="current-project-body">
       <slot name="image"></slot>
       <button>Сайты</button>
     </div>
     <h1 class="current-project-card__title"><slot name="title"></slot></h1>
-  </div>
+  </article>
 </template>
 
 <style scoped>

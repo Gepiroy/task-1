@@ -6,7 +6,7 @@ import ExtraIcon from '@img/ExtraIcon.vue'
 </script>
 
 <template>
-  <div class="subscribe-card card">
+  <article class="subscribe-card card">
     <div class="subscribe-card-content">
       <h1 class="subscribe-card__title"><slot name="title"></slot></h1>
       <p class="subscribe-card__lore"><slot name="lore"></slot></p>
@@ -28,11 +28,11 @@ import ExtraIcon from '@img/ExtraIcon.vue'
       <hr/>
       <h1 class="subscribe-card__price"><slot name="price"></slot></h1>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
-export default{
+export default {
   data: function() {
     return{
       subscriptionTexts: [

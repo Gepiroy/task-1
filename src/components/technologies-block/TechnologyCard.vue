@@ -1,11 +1,11 @@
 <template>
-  <div class="technology-card card">
+  <article class="technology-card card">
     <slot name="icon"></slot>
     <div class="technology-card-texts">
       <h3 class="technology-card__title"><slot name="title"></slot></h3>
       <p class="technology-card__lore"><slot name="lore"></slot></p>
     </div>
-  </div>
+  </article>
 </template>
 
 <style scoped>

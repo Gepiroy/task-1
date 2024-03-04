@@ -1,11 +1,11 @@
 <template>
-  <div class="ability-card card">
+  <article class="ability-card card">
     <div class="ability-title">
       <h1 class="ability-number"><slot name="number"></slot></h1>
     </div>
     <h3 class="ability-card__title"><slot name="title"></slot></h3>
     <p class="ability-card__lore"><slot name="lore"></slot></p>
-  </div>
+  </article>
 </template>
 
 <style scoped>

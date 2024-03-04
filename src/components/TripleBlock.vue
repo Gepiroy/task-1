@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="triple-block">
+  <section class="triple-block">
     <div v-if="title||comment" class="triple-block-heading">
       <div class="justify-left">
         <h1 v-if="title" class="triple-block__title">{{ title }}</h1>
@@ -15,7 +15,7 @@
       <slot name="grid-content"></slot> <!-- legacy temporary support -->
       <slot></slot>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

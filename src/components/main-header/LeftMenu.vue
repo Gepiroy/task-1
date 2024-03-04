@@ -3,7 +3,7 @@ import IconLogo from "@img/IconLogo.vue";
 </script>
 
 <template>
-  <div class="left-menu">
+  <nav class="left-menu">
     <a class="left-menu__item" href="some-href">
       <icon-logo></icon-logo>
     </a>
@@ -19,7 +19,7 @@ import IconLogo from "@img/IconLogo.vue";
     <a class="left-menu__item desktop" href="some-href">
       КОНТАКТЫ
     </a>
-  </div>
+  </nav>
 </template>
 
 <style scoped>
