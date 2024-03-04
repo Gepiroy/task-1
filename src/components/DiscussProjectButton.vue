@@ -10,5 +10,6 @@
     border-radius: 4px;
     border: none;
     color: #fff;
+    cursor: pointer;
   }
 </style>

@@ -9,6 +9,9 @@
 </template>
 
 <style scoped>
+  .ability-card{
+    gap: 20px;
+  }
   .ability-card__title{
     text-transform: uppercase;
     font-size: 24px;
@@ -27,24 +30,23 @@
 
     color: #676F73;
   }
-  .ability-title{
+  .ability-title{ /* Номеру нужен холдер, который будет relative (not-static), для отрисовки линии. */
     position: relative;
-    display: flex;
-  }
-  .ability-title hr{
-    display: flex;
-    flex-direction: row;
-    border: 2px solid var(--purple);
   }
   .ability-number{
+    font-family: Proxima Nova;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.06em;
+    text-align: left;
     color: var(--purple);
   }
   .ability-number:after{
-    content:" ";
-    display: block;
+    content: " ";
     height: 2px;
-    margin-left: 2em;
-    width: calc(100% - 2em);
+    margin-left: 84px;
+    width: calc(100% - 84px);
     position: absolute;
     top: 50%;
     left: 0;

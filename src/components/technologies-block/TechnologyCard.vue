@@ -10,7 +10,9 @@
 
 <style scoped>
 .technology-card{
-  display: flex;
+  display: grid;
+  justify-content: left;
+  grid-template-columns: 72px 1fr;
   gap: 68px;
   align-items: center;
 }

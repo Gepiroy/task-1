@@ -7,7 +7,7 @@
       <slot name="image"></slot>
       <button>Сайты</button>
     </div>
-    <h1 class="current-project-card__title"><slot name="title"></slot></h1>
+    <h1 class="current-project-card__title">{{ title }}</h1>
   </article>
 </template>
 
@@ -26,6 +26,7 @@
     height: 350px;
     width: 100%;
     align-items: center;
+    justify-content: center;
   }
   .current-project-card__title{
     font-size: 28px;
@@ -51,3 +52,8 @@
     max-width: 100%;
   }
 </style>
+<script>
+export default {
+  props: ['title']
+}
+</script>

@@ -64,7 +64,7 @@
 </style>
 
 <script>
-  export default{
+  export default {
     props: ['title','comment']
   }
 </script>

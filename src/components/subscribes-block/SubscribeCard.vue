@@ -26,7 +26,7 @@ import ExtraIcon from '@img/ExtraIcon.vue'
     </div>
     <div class="price-block">
       <hr/>
-      <h1 class="subscribe-card__price"><slot name="price"></slot></h1>
+      <h1 class="subscribe-card__price">{{ price }} ₽</h1>
     </div>
   </article>
 </template>
@@ -54,6 +54,9 @@ export default {
     },
     extraFeatures: {
       type: Array
+    },
+    price: {
+      type: String
     }
   }
 }
@@ -69,6 +72,13 @@ export default {
     flex-direction: column;
     justify-content: space-between;
   }
+  .subscribe-card:hover{
+    cursor: pointer;
+  }
+  .subscribe-card:hover .subscribe-card__price{
+    color: var(--purple);
+  }
+
   .subscribe-card__features{
     display: flex;
     flex-direction: column;
@@ -95,12 +105,7 @@ export default {
     line-height: 54px;
     letter-spacing: 1px;
     text-align: left;
-  }
-  .subscribe-card-content{
-
-  }
-  .price-block{
-
+    transition: all 0.3s linear 0s;
   }
   .ability-number{
     color: var(--purple);
