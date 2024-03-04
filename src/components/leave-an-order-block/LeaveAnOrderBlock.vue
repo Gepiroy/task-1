@@ -25,18 +25,6 @@ import Arrow from '@img/Arrow.vue';
   align-items: center;
   padding: 0 136px;
 }
-@media(max-width:1023){
-  .leave-an-order-block{
-    display: grid;
-    grid-template-columns: 75% 25%;
-    align-items: center;
-    padding: 30px 100px;
-  }
-  .leave-an-order-block__arrow{
-    justify-self: end;
-    align-self: flex-end;
-  }
-}
 .leave-an-order-block__arrow{
   justify-self: end;
 }
@@ -48,5 +36,21 @@ import Arrow from '@img/Arrow.vue';
   letter-spacing: 0em;
   text-align: left;
   color: white;
+}
+@media(max-width:1023px){
+  .leave-an-order-block{
+    padding: 0 30px;
+  }
+  .leave-an-order-block__arrow{
+    justify-self: end;
+    align-self: flex-end;
+  }
+  .leave-an-order-block__text{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
 }
 </style>

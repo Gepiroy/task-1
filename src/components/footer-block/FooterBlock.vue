@@ -66,6 +66,10 @@ import InstagramIcon from '@img/InstagramIcon.vue'
   flex-direction: column;
   gap: 30px;
 }
+.footer-last-left{
+  display: flex;
+  flex-direction: column;
+}
 @media(min-width: 1024px){
   /* desktop */
   .footer-grid{
@@ -74,6 +78,11 @@ import InstagramIcon from '@img/InstagramIcon.vue'
   }
   .footer-column{
     gap: 14px;
+  }
+  .footer-last-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .footer-column{
@@ -85,10 +94,6 @@ import InstagramIcon from '@img/InstagramIcon.vue'
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 23px 0 21px 0;
-}
-.footer-last-left{
-  display: flex;
-  justify-content: space-between;
 }
 .footer-last-left a{
   font-size: 14px;

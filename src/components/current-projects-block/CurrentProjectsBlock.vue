@@ -7,16 +7,13 @@ import CurrentProjectCard from "./CurrentProjectCard.vue";
   <div class = "current-projects-block">
     <triple-block title="Текущие проекты по поддержке сайтов">
       <template #grid-content>
-        <current-project-card>
-          <template #title>Сайт Аппарель</template>
+        <current-project-card title="Сайт Аппарель">
           <template #image><img src="@img/notebooks.png" alt=""/></template>
         </current-project-card>
-        <current-project-card>
-          <template #title>Сайт Музея</template>
+        <current-project-card title="Сайт Музея">
           <template #image><img src="@img/notebooks.png"/></template>
         </current-project-card>
-        <current-project-card>
-          <template #title>Сайт Тёплый день</template>
+        <current-project-card title="Сайт Тёплый день">
           <template #image><img src="@img/warm-day.png"/></template>
         </current-project-card>
       </template>

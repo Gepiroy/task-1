@@ -19,6 +19,10 @@ import SupportingSites from './SupportingSites.vue';
   }
 
   @media(max-width:1024px){
+    .first-block{
+      display: flex;
+      flex-direction: column;
+    }
     .first-block__image{
       display: none;
     }
