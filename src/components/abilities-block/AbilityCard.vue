@@ -34,13 +34,13 @@
     position: relative;
   }
   .ability-number{
-    font-family: Proxima Nova;
     font-size: 48px;
     font-weight: 400;
     line-height: 64px;
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--purple);
+    margin: 0;
   }
   .ability-number:after{
     content: " ";

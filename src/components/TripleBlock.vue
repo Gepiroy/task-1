@@ -21,6 +21,9 @@
 </template>
 
 <style scoped>
+.triple-block{
+  gap: 50px;
+}
 .triple-body{
   display: flex;
   flex-wrap: wrap;

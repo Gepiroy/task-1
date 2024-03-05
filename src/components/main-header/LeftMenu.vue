@@ -13,9 +13,16 @@ import IconLogo from "@img/IconLogo.vue";
     <a class="left-menu__item desktop" href="some-href">
       О КОМПАНИИ
     </a>
-    <a class="left-menu__item desktop" href="some-href">
-      УСЛУГИ
-    </a>
+    <div class="dropdown-container desktop">
+      <button class="left-menu__item left-menu__dropdown" >УСЛУГИ
+        <img src="@img/DropdownArrow.svg"></img>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Can do</a>
+        <a href="#">Those styles</a>
+        <a href="#">Later</a>
+      </div>
+    </div>
     <a class="left-menu__item desktop" href="some-href">
       КОНТАКТЫ
     </a>
@@ -23,6 +30,33 @@ import IconLogo from "@img/IconLogo.vue";
 </template>
 
 <style scoped>
+  .dropdown-container{
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown-container:hover .dropdown-content{
+    display:flex;
+    flex-direction: column;
+  }
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  .left-menu__dropdown{
+    display: flex;
+    gap: 8px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    align-items: center;
+    cursor: pointer;
+  }
   .left-menu{
     display: flex;
     justify-content: space-between;

@@ -11,7 +11,7 @@ import RightMenu from './RightMenu.vue';
         <left-menu></left-menu>
         <right-menu></right-menu>
       </div>
-      <hr />
+      <hr class="main-header__line"/>
     </div>
   </div>
 </template>
@@ -20,5 +20,8 @@ import RightMenu from './RightMenu.vue';
   .main-header-content{
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+  .main-header__line{
+    border: 1px solid #2632384D;
   }
 </style>

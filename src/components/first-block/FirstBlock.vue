@@ -16,9 +16,11 @@ import SupportingSites from './SupportingSites.vue';
   .first-block{
     display: grid;
     grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: 50px 0 0 0;
   }
 
-  @media(max-width:1024px){
+  @media(max-width:1023px){
     .first-block{
       display: flex;
       flex-direction: column;
