@@ -1,20 +1,15 @@
 <script setup>
 import TripleBlock from "../TripleBlock.vue";
 import CurrentProjectCard from "./CurrentProjectCard.vue";
+import axios from 'axios';
 </script>
 
 <template>
   <div class = "current-projects-block">
     <triple-block title="Текущие проекты по поддержке сайтов">
       <template #grid-content>
-        <current-project-card title="Сайт Аппарель">
-          <template #image><img src="@img/notebooks.png" alt=""/></template>
-        </current-project-card>
-        <current-project-card title="Сайт Музея">
-          <template #image><img src="@img/notebooks.png"/></template>
-        </current-project-card>
-        <current-project-card title="Сайт Тёплый день">
-          <template #image><img src="@img/warm-day.png"/></template>
+        <current-project-card v-for="(card, index) in cards" :key="index" :title="card.title">
+          <template #image><img :src="card.image" :alt="card.title"/></template>
         </current-project-card>
       </template>
     </triple-block>
@@ -43,3 +38,20 @@ import CurrentProjectCard from "./CurrentProjectCard.vue";
   color: #263238;
 }
 </style>
+
+<script>
+  export default {
+    data() {
+      return {
+        cards: null
+      }
+    },
+    mounted() {
+      axios
+      .get("http://localhost/task-2/wp-json/task-2/v1/project")
+      .then((res) => {
+        this.cards = res.data
+      })
+    }
+  }
+</script>
