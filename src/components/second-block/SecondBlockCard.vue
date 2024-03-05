@@ -8,8 +8,11 @@
 
 <style scoped>
   .second-block__card{
-    border: solid black;
-    border-width: 1px 1px 1px 0;
+    /*border: solid black;*/
+    /*border-width: 1px;*/
+    border: 1px solid;
+    border-image: url('@img/BorderModel.svg');
+    border-image-slice: 1;
     height: 100%;
   }
   .second-block__card h3{
