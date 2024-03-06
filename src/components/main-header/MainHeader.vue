@@ -24,4 +24,8 @@ import RightMenu from './RightMenu.vue';
   .main-header__line{
     border: 1px solid #2632384D;
   }
+
+  @media screen and (min-width: 1024px){
+    
+  }
 </style>
