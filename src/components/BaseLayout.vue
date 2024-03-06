@@ -19,13 +19,13 @@ import FooterBlock from '@c/footer-block/FooterBlock.vue';
 main{
   display: flex;
   flex-direction: column;
-  gap: 180px;
+  gap: 100px;
 }
 @media screen and (min-width: 1024px) {
   main{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 180px;
     margin: 100px 0 0 0;
   }
 }

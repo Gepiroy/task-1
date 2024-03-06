@@ -9,7 +9,7 @@
           <p v-if="comment" class="triple-block__comment">{{ comment }}</p>
         </div>
       </div>
-      <div class="triple-body">
+      <div :class="'triple-body ' + body_style">
         <slot></slot>
       </div>
     </section>
@@ -41,19 +41,25 @@
   color: #263238;
 }
 .triple-block__comment{
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #676F73;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #676F73;
+}
+.no-mobile-gap{
+  gap: 0;
 }
 @media(min-width: 1024px){
+  .no-mobile-gap{
+    gap: auto;
+  }
   .triple-body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row dense;
-    column-gap: 25px;
+    gap: 25px;
   }
   .triple-block-heading{
     display: grid;
@@ -69,6 +75,10 @@
 
 <script>
   export default {
-    props: ['title','comment']
+    props: {
+      title: String,
+      comment: String,
+      body_style: String
+    }
   }
 </script>

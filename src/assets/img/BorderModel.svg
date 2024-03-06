@@ -3,9 +3,8 @@
     <rect id='corner' width='5' height='5' fill="#000"/>
     <mask id='mask'>
       <rect id='main-rect' x='0' y='0' width='100' height='100' fill='#fff' />
-      <rect id='corner' width='5%' height='100%' fill="#000"/>
       <use href='#corner' x='95' y='0'/>
-      <!--use href='#corner' x='90' y='90'/-->
+      <use href='#corner' x='95' y='95'/>
     </mask>
     <rect id="rect" width="100%" height="100%" fill="#676F73"/>
   </defs>

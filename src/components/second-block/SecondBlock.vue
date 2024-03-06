@@ -2,16 +2,12 @@
 import SecondBlockCard from './SecondBlockCard.vue';
 import TripleBlock from "@c/TripleBlock.vue";
 import axios from 'axios';
-//import { ref } from 'vue';
-//const cards = ref(null);
 </script>
 
 <template>
-  <triple-block>
-    <SecondBlockCard v-for="(card, index) in cards" :key="index">
-      <template #icon><img :src="card.icon"></template>
-      <template #title>{{ card.title }}</template>
-      <template #lore>{{ card.lore }}</template>
+  <triple-block body_style="no-mobile-gap">
+    <SecondBlockCard v-for="(card, index) in cards" :key="index" :title="card.title" :lore="card.lore">
+      <template #icon><img style="width: 100%; height: 100%;" :src="card.icon"></template>
     </SecondBlockCard>
   </triple-block>
 </template>
