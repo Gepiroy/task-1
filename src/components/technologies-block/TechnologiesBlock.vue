@@ -1,7 +1,7 @@
 <script setup>
 import TripleBlock from "@c/TripleBlock.vue";
 import TechnologyCard from "./TechnologyCard.vue";
-import axios from 'axios';
+import db from '@/pseudo_back/db.js';
 </script>
 
 <template>
@@ -33,12 +33,8 @@ import axios from 'axios';
         cards: null
       }
     },
-    mounted() {
-      axios
-      .get("http://localhost/task-2/wp-json/task-2/v1/technologies")
-      .then((res) => {
-        this.cards = res.data
-      })
+    async mounted() {
+      this.cards = await db.getCard("technologies");
     }
   }
 </script>

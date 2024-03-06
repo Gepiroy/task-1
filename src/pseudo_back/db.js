@@ -4,6 +4,57 @@ import notebooks from "@img/notebooks.png";
 import warmDay from "@img/warm-day.png";
 const link = "http://localhost/task-2/wp-json/task-2/v1/";
 const datas = {
+  benefit: [
+    {
+      icon: placeholder,
+      title: "Some title 1",
+      lore: "Some lore lore lore lore ahahahaha lore lore it's a fake lore!",
+    },
+    {
+      icon: placeholder,
+      title: "Some title 2",
+      lore: "Some lore lore lore lore ahahahaha lore lore it's a fake lore!",
+    },
+    {
+      icon: placeholder,
+      title: "Some title 3",
+      lore: "Some lore lore lore lore ahahahaha lore lore it's a fake lore!",
+    },
+  ],
+  abilities: [
+    {
+      icon: placeholder,
+      title: "Some title 1",
+      lore: "Some lore lore lore lore ahahahaha lore lore it's a fake lore!",
+    },
+    {
+      icon: placeholder,
+      title: "Some title 2",
+      lore: "Some lore lore lore lore ahahahaha lore lore it's a fake lore!",
+    },
+    {
+      icon: placeholder,
+      title: "Some title 3",
+      lore: "Some lore lore lore lore ahahahaha lore lore it's a fake lore!",
+    },
+  ],
+  technologies: [
+    {
+      icon: placeholder,
+      title: "Some title 1",
+      lore: "Some lore lore lore lore ahahahaha lore lore it's a fake lore!",
+    },
+    {
+      icon: placeholder,
+      title: "Some title 2",
+      lore: "Some lore lore lore lore ahahahaha lore lore it's a fake lore!",
+    },
+    {
+      icon: placeholder,
+      title: "Some title 3",
+      lore: "Some lore lore lore lore ahahahaha lore lore it's a fake lore!",
+    },
+  ],
   project: [
     {
       image: notebooks,
@@ -16,7 +67,7 @@ const datas = {
     {
       image: warmDay,
       title: "Some title 3",
-    }
+    },
   ],
 };
 export default {
