@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
   <div class="global-container">
     <section class="triple-block">
@@ -13,7 +10,6 @@
         </div>
       </div>
       <div class="triple-body">
-        <slot name="grid-content"></slot> <!-- legacy temporary support -->
         <slot></slot>
       </div>
     </section>
@@ -37,10 +33,10 @@
 
 .triple-block__title{
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 43px;
-  letter-spacing: 1px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
   text-align: left;
   color: #263238;
 }
@@ -62,6 +58,11 @@
   .triple-block-heading{
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .triple-block__title{
+    font-size: 40px;
+    line-height: 43px;
+    letter-spacing: 1px;
   }
 }
 </style>
