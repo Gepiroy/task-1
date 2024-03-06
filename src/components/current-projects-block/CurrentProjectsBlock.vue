@@ -11,7 +11,7 @@ import db from '@/pseudo_back/db.js';
         <template #image><img :src="card.image" :alt="card.title"/></template>
       </current-project-card>
     </triple-block>
-    <button class="show-more-button">Показать ещё</button>
+    <div class="global-container"><button class="show-more-button">Показать ещё</button></div>
   </div>
 </template>
 
@@ -20,6 +20,13 @@ import db from '@/pseudo_back/db.js';
   display:flex;
   flex-direction: column;
   align-items: center;
+  gap: 100px;
+}
+@media(max-width:1023px){
+  .current-projects-block{
+    align-items: start;
+    gap: 30px;
+  }
 }
 </style>
 

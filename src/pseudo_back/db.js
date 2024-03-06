@@ -1,18 +1,20 @@
 import axios from "axios";
 import placeholder from '@img/CssIcon.svg'
+import notebooks from "@img/notebooks.png";
+import warmDay from "@img/warm-day.png";
 const link = "http://localhost/task-2/wp-json/task-2/v1/";
 const datas = {
   project: [
     {
-      image: placeholder,
+      image: notebooks,
       title: "Some title 1",
     },
     {
-      image: placeholder,
+      image: notebooks,
       title: "Some title 2",
     },
     {
-      image: placeholder,
+      image: warmDay,
       title: "Some title 3",
     }
   ],

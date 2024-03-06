@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
+    gap: 25px;
   }
   .current-project-body{
     position: relative;
@@ -48,8 +49,29 @@
     color: #676F73;
   }
   .current-project-body :slotted(img){
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 80%;
+    max-width: 80%;
+  }
+  @media(max-width:1023px){
+    .current-project-body{
+      height: 250px;
+    }
+    .current-project-card__title{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .current-project-card{
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      gap: 15px;
+    }
+    .current-project-body button{
+      bottom: 12px;
+      left: 12px;
+      border-radius: 2px;
+      padding: 4px 18px;
+    }
   }
 </style>
 <script>
