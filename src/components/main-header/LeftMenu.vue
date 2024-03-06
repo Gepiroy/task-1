@@ -14,7 +14,12 @@ import MenuDropdown from "@c/MenuDropdown.vue";
     <a class="left-menu__item desktop" href="some-href">
       О КОМПАНИИ
     </a>
-    <menu-dropdown title="УСЛУГИ" class="desktop">
+    <menu-dropdown class="desktop">
+      <template #title>
+        <a class="left-menu__item desktop" href="some-href">
+          УСЛУГИ
+        </a>
+      </template>
       <a href="#">Can do</a>
       <a href="#">Those styles</a>
       <a href="#">Later</a>

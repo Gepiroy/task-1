@@ -1,7 +1,7 @@
 <template>
   <div class="dropdown-container">
       <button class="menu-dropdown">
-        {{ title }}
+        <slot name="title"></slot> <!-- Сюда передаётся не текст, а форматированная ссылка со совим стилем. -->
         <img src="@img/DropdownArrow.svg"/>
       </button>
       <div class="dropdown-content">
@@ -39,11 +39,3 @@
     cursor: pointer;
   }
 </style>
-
-<script>
-  export default {
-    props: {
-      title:  String
-    }
-  }
-</script>
