@@ -16,7 +16,7 @@ import RightMenuButton from "@c/DiscussProjectButton.vue";
   .right-menu{
     display: flex;
     justify-content: right;
-    padding: 14px 0;
+    align-items: flex-end;
     gap: 42px;
   }
   .menu__phone-number{
@@ -24,6 +24,11 @@ import RightMenuButton from "@c/DiscussProjectButton.vue";
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+  }
+
+  @media screen and (min-width: 1024px){
+    .right-menu{
+      align-items: center;
+    }
   }
 </style>

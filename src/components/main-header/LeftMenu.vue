@@ -41,7 +41,10 @@ import MenuDropdown from "@c/MenuDropdown.vue";
     text-align: left;
     text-decoration: none;
   }
-  @media(max-width:1024px){
+  @media(max-width:1023px){
+    .left-menu{
+      align-items: start;
+    }
     nav{
       display: none;
     }
