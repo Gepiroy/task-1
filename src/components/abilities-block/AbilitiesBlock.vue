@@ -6,13 +6,11 @@ import axios from "axios";
 
 <template>
   <triple-block title='Возможности'>
-    <template #grid-content>
-      <ability-card v-for="(data, index) in cards" :key="index">
-        <template #number>{{ (index+1).toString().padStart(2, '0') }}</template>
-        <template #title>{{ data.title }}</template>
-        <template #lore>{{ data.lore }}</template>
-      </ability-card>
-    </template>
+    <ability-card v-for="(data, index) in cards" :key="index">
+      <template #number>{{ (index+1).toString().padStart(2, '0') }}</template>
+      <template #title>{{ data.title }}</template>
+      <template #lore>{{ data.lore }}</template>
+    </ability-card>
   </triple-block>
 </template>
 

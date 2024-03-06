@@ -5,17 +5,25 @@ import axios from 'axios';
 </script>
 
 <template>
-  <triple-block title="Технологии">
-      <technology-card v-for="(card, index) in cards" :key="index">
-        <template #icon><img :src="card.icon" :alt="card.title"/></template>
-        <template #title>{{ card.title }}</template>
-        <template #lore>{{ card.lore }}</template>
-      </technology-card>
-  </triple-block>
+  <div class="technologies-block-wrapper">
+    <triple-block title="Технологии">
+        <technology-card v-for="(card, index) in cards" :key="index" :title="card.title" :lore="card.lore">
+          <template #icon><img :src="card.icon" :alt="card.title" style="width:100%; height:100%;"/></template>
+        </technology-card>
+    </triple-block>
+    <div class="global-container">
+      <button class="show-more-button mobile">Показать еще</button>
+    </div>
+  </div>
 </template>
 
-<style>
-
+<style scoped>
+  .technologies-block-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
 </style>
 
 <script>

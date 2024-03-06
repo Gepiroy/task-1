@@ -7,13 +7,11 @@ import axios from 'axios';
 <template>
   <div class = "current-projects-block">
     <triple-block title="Текущие проекты по поддержке сайтов">
-      <template #grid-content>
-        <current-project-card v-for="(card, index) in cards" :key="index" :title="card.title">
-          <template #image><img :src="card.image" :alt="card.title"/></template>
-        </current-project-card>
-      </template>
+      <current-project-card v-for="(card, index) in cards" :key="index" :title="card.title">
+        <template #image><img :src="card.image" :alt="card.title"/></template>
+      </current-project-card>
     </triple-block>
-    <button class="current-projects-block__show-more">Показать ещё</button>
+    <button class="show-more-button">Показать ещё</button>
   </div>
 </template>
 
@@ -22,20 +20,6 @@ import axios from 'axios';
   display:flex;
   flex-direction: column;
   align-items: center;
-}
-.current-projects-block__show-more{
-  border-radius: 4px;
-  border: 1px solid var(--purple);
-  background: transparent;
-  padding: 29px 85px;
-  
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #263238;
 }
 </style>
 

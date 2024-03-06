@@ -2,11 +2,11 @@
   <div class="global-container">
     <section class="triple-block">
       <div v-if="title||comment" class="triple-block-heading">
-        <div class="justify-left">
-          <h1 v-if="title" class="triple-block__title">{{ title }}</h1>
+        <div v-if="title" class="justify-left">
+          <h1 class="triple-block__title">{{ title }}</h1>
         </div>
-        <div class="justify-right">
-          <p v-if="comment" class="triple-block__comment">{{ comment }}</p>
+        <div v-if="comment" class="justify-right">
+          <p class="triple-block__comment">{{ comment }}</p>
         </div>
       </div>
       <div :class="'triple-body ' + body_style">
@@ -18,7 +18,9 @@
 
 <style scoped>
 .triple-block{
-  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .triple-body{
   display: flex;
@@ -28,7 +30,7 @@
 .triple-block-heading{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
 }
 
 .triple-block__title{
@@ -41,9 +43,9 @@
   color: #263238;
 }
 .triple-block__comment{
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 34px;
+  line-height: 19px;
   letter-spacing: 0px;
   text-align: left;
   color: #676F73;
@@ -52,6 +54,9 @@
   gap: 0;
 }
 @media(min-width: 1024px){
+  .triple-block{
+    gap: 50px;
+  }
   .no-mobile-gap{
     gap: auto;
   }
@@ -70,6 +75,10 @@
     line-height: 43px;
     letter-spacing: 1px;
   }
+  .triple-block__comment{
+    font-size: 28px;
+    line-height: 34px;
+  }
 }
 </style>
 
@@ -77,7 +86,10 @@
   export default {
     props: {
       title: String,
-      comment: String,
+      comment: {
+        type: String,
+        default: null
+      },
       body_style: String
     }
   }
