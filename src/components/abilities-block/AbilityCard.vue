@@ -10,6 +10,8 @@
 
 <style scoped>
   .ability-card{
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
   .ability-card__title{
@@ -44,12 +46,40 @@
   }
   .ability-number:after{
     content: " ";
-    height: 2px;
     margin-left: 84px;
+    height: 2px;
     width: calc(100% - 84px);
     position: absolute;
     top: 50%;
     left: 0;
     background: var(--purple);
+  }
+
+  @media(max-width: 1023px){ /* Mobile first - забью на этом проекте, а то много кода носить не туда. */
+    .ability-card{
+      gap: 10px;
+    }
+    .ability-number{
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 15px;
+    }
+    .ability-number:after{
+      margin-left: 40px;
+      width: calc(100% - 40px);
+      height: 1px;
+    }
+    .ability-card__title{
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .ability-card__lore{
+      font-size: 16px;
+      line-height: 19px;
+      background-image: linear-gradient(162.85deg, #676F73 25.2%, rgba(103, 111, 115, 0.2) 82.59%);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
   }
 </style>
