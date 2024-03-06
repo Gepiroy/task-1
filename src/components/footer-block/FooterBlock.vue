@@ -43,7 +43,7 @@ import InstagramIcon from '@img/InstagramIcon.vue'
           <div class="footer-last-left">
             <a>ООО «Твой стартап»</a>
             <a>© 2020 — 2022</a>
-            <a style="color: #A8ADAF;">8 800 350 93 98</a>
+            <a class="fast-space" style="color: #A8ADAF;">8 800 350 93 98</a>
             <a style="color: #A8ADAF;">info@your-startup.space</a>
           </div>
           <div class="footer-last-right">
@@ -70,6 +70,17 @@ import InstagramIcon from '@img/InstagramIcon.vue'
   display: flex;
   flex-direction: column;
 }
+.footer-last-right{
+  display: flex;
+  justify-content: end;
+}
+
+@media(max-width: 1023px){
+  .fast-space{ /* По-быстрому делаю отступ, не перегораживая дизайн разделением на блоки-врапперы. */
+    margin: 20px 0 0 0;
+  }
+}
+
 @media(min-width: 1024px){
   /* desktop */
   .footer-grid{
@@ -83,6 +94,9 @@ import InstagramIcon from '@img/InstagramIcon.vue'
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .footer-last-right{
+    gap: 10px;
   }
 }
 .footer-column{
@@ -102,11 +116,6 @@ import InstagramIcon from '@img/InstagramIcon.vue'
   letter-spacing: 0em;
   text-align: left;
   color: #676F73;
-}
-.footer-last-right{
-  display: flex;
-  justify-content: end;
-  gap: 10px;
 }
 .footer-column h3{
   font-size: 18px;
