@@ -1,12 +1,8 @@
-<script setup>
-import Arrow from '@img/Arrow.vue';
-</script>
-
 <template>
   <div class="filler">
     <div class="leave-an-order-block">
       <h1 class="leave-an-order-block__text">оставьте заявку на поддержку сайта</h1>
-      <div class="leave-an-order-block__arrow"><Arrow></Arrow></div>
+      <div class="leave-an-order-block__arrow"><img src="@/assets/img/Arrow.svg" style="width:100%; height:100%;"></div>
     </div>
   </div>
 </template>
@@ -23,10 +19,11 @@ import Arrow from '@img/Arrow.vue';
   display: grid;
   grid-template-columns: 75% 25%;
   align-items: center;
-  padding: 0 136px;
+  padding: 53px 136px;
 }
 .leave-an-order-block__arrow{
   justify-self: end;
+  width: 100px;
 }
 .leave-an-order-block__text{
   text-transform: uppercase;
@@ -39,18 +36,15 @@ import Arrow from '@img/Arrow.vue';
 }
 @media(max-width:1023px){
   .leave-an-order-block{
-    padding: 0 30px;
+    padding: 100px 30px;
   }
   .leave-an-order-block__arrow{
-    justify-self: end;
     align-self: flex-end;
+    width: 60px;
   }
   .leave-an-order-block__text{
     font-size: 40px;
-    font-weight: 600;
     line-height: 48px;
-    letter-spacing: -0.01em;
-    text-align: left;
   }
 }
 </style>
