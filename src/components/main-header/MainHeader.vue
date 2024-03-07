@@ -24,7 +24,7 @@ import RightMenu from './RightMenu.vue';
     height: 57px;
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1200px){
     .main-header{
       margin: 0 var(--page-padding);
     }

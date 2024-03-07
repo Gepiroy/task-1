@@ -75,13 +75,13 @@ import InstagramIcon from '@img/InstagramIcon.vue'
   justify-content: end;
 }
 
-@media(max-width: 1023px){
+@media(max-width: 1199px){
   .fast-space{ /* По-быстрому делаю отступ, не перегораживая дизайн разделением на блоки-врапперы. */
     margin: 20px 0 0 0;
   }
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1200px){
   /* desktop */
   .footer-grid{
     display: grid;

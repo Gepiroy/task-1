@@ -21,7 +21,7 @@ main{
   flex-direction: column;
   gap: 100px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   main{
     display: flex;
     flex-direction: column;

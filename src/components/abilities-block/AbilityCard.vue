@@ -55,7 +55,7 @@
     background: var(--purple);
   }
 
-  @media(max-width: 1023px){ /* Mobile first - забью на этом проекте, а то много кода носить не туда. */
+  @media(max-width: 1199px){ /* Mobile first - забью на этом проекте, а то много кода носить не туда. */
     .ability-card{
       gap: 10px;
     }

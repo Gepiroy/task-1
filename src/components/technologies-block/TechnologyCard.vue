@@ -40,7 +40,7 @@
   color: #676F73;
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1200px){
   .technology-card{
     grid-template-columns: 72px 1fr;
     gap: 68px;

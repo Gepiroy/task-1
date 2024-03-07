@@ -5,7 +5,7 @@
 
   --page-padding: 80px;
 }
-@media(max-width: 1023px){
+@media(max-width: 1199px){
   :root{
     --page-padding: 30px;
   }
@@ -62,7 +62,7 @@ p, h1, h2, h3, h4, h5, h6{
 
   color: #676F73;
 }
-@media(min-width: 1024px){ /* desktop */
+@media(min-width: 1200px){ /* desktop */
   .mobile{
     display: none!important;
   }
@@ -77,7 +77,7 @@ p, h1, h2, h3, h4, h5, h6{
   }
 }
 
-@media(max-width: 1023px){
+@media(max-width: 1199px){
   .desktop{
     display: none!important;
   }

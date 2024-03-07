@@ -128,7 +128,7 @@ export default {
   gap: 10px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .subscribe-card {
     border-radius: 2px;
     padding: 30px 0 30px 30px;

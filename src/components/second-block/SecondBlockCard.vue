@@ -41,7 +41,7 @@
     height: 68px;
   }
 
-  @media(min-width: 1024px){
+  @media(min-width: 1200px){
     .second-block__card{
       height: 100%;
     }

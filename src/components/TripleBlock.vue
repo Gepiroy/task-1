@@ -53,7 +53,7 @@
 .no-mobile-gap{
   gap: 0;
 }
-@media(min-width: 1024px){
+@media(min-width: 1200px){
   .triple-block{
     gap: 50px;
   }

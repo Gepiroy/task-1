@@ -26,7 +26,7 @@ import RightMenuButton from "@c/DiscussProjectButton.vue";
     letter-spacing: 0em;
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1200px){
     .right-menu{
       align-items: center;
     }

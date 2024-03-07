@@ -46,7 +46,7 @@ import ExtraIcon from "@img/ExtraIcon.svg";
 .gray {
   color: #a8adaf;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .subscribe-feature__icon {
     width: 18px;
     height: 18px;
